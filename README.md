@@ -34,11 +34,7 @@
 
 ## 📥 安装方法
 
-### 方式一：下载APK
-
-从[Releases](https:///github.com/xiaoxiaoguai-yyds/xuebutong-app/releases)页面下载最新版本的APK文件，并安装到您的Android设备上。
-
-### 方式二：自行编译
+### 方式一：克隆源码
 
 1. 克隆本仓库
    ```bash
