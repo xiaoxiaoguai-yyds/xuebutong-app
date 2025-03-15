@@ -1,0 +1,9 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ds"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_thumb_up_off_alt_24"
+        tools:ignore="MenuTitle"/>
+</menu>

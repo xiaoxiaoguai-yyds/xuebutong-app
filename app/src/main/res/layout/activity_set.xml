@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".SetActivity">
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:background="#27F3DEDE">
+
+		<androidx.appcompat.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:background="@color/gree"
+				app:titleTextColor="@color/white"
+				app:title="JavaScript"
+				app:titleTextAppearance="@style/Toolbar.TitleText"
+				app:subtitleTextAppearance="@style/Toolbar.SubTitleText"
+				app:subtitleTextColor="@color/white"
+				android:layout_height="wrap_content"/>
+
+		<ScrollView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical"
+					android:padding="15dp">
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+					<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="账户设置"
+							android:textSize="17sp"
+							android:textStyle="bold"
+							android:layout_marginLeft="5dp"
+							android:layout_marginRight="5dp"
+							android:layout_marginTop="5dp"
+							android:layout_marginBottom="5dp"
+							android:textColor="@color/black"/>
+
+					<androidx.cardview.widget.CardView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							app:cardBackgroundColor="@color/white"
+							app:cardCornerRadius="10dp"
+							android:layout_margin="5dp"
+							app:cardElevation="0dp">
+
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:gravity="center_vertical"
+								android:padding="10dp">
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:orientation="vertical"
+									android:layout_weight="1">
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="自动登录"
+										android:textColor="@color/black"
+										android:textSize="16sp"
+										android:textStyle="bold"
+										android:layout_margin="2dp"/>
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="每次打开软件自动登录保存的历史cookie"
+										android:textColor="#95000000"
+										android:textSize="13sp"
+										android:layout_margin="2dp"/>
+							</LinearLayout>
+
+							<LinearLayout
+									android:layout_width="wrap_content"
+									android:layout_height="match_parent"
+									android:gravity="center">
+
+								<com.suke.widget.SwitchButton
+										android:id="@+id/v1"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										app:sb_checked_color="@color/gree"/>
+							</LinearLayout>
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							app:cardBackgroundColor="@color/white"
+							app:cardCornerRadius="10dp"
+							android:layout_margin="5dp"
+							app:cardElevation="0dp">
+
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:gravity="center_vertical"
+								android:padding="10dp">
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:orientation="vertical"
+									android:layout_weight="1">
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="保存cookie"
+										android:textColor="@color/black"
+										android:textSize="16sp"
+										android:textStyle="bold"
+										android:layout_margin="2dp"/>
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="扫描登录自动保存账号cookie"
+										android:textColor="#95000000"
+										android:textSize="13sp"
+										android:layout_margin="2dp"/>
+							</LinearLayout>
+
+							<LinearLayout
+									android:layout_width="wrap_content"
+									android:layout_height="match_parent"
+									android:gravity="center">
+
+								<com.suke.widget.SwitchButton
+										android:id="@+id/v2"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										app:sb_checked_color="@color/gree"/>
+							</LinearLayout>
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+					<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="刷课配置"
+							android:textSize="17sp"
+							android:textStyle="bold"
+							android:layout_marginLeft="5dp"
+							android:layout_marginRight="5dp"
+							android:layout_marginTop="10dp"
+							android:layout_marginBottom="5dp"
+							android:textColor="@color/black"/>
+
+					<androidx.cardview.widget.CardView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							app:cardBackgroundColor="@color/white"
+							app:cardCornerRadius="10dp"
+							android:layout_margin="5dp"
+							app:cardElevation="0dp">
+
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:gravity="center_vertical"
+								android:padding="10dp">
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:orientation="vertical"
+									android:layout_weight="1">
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="自动播放视频/音频"
+										android:textColor="@color/black"
+										android:textSize="16sp"
+										android:textStyle="bold"
+										android:layout_margin="2dp"/>
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="打开课程任务节点自动播放视频，关闭则走流程"
+										android:textColor="#95000000"
+										android:textSize="13sp"
+										android:layout_margin="2dp"/>
+							</LinearLayout>
+
+							<LinearLayout
+									android:layout_width="wrap_content"
+									android:layout_height="match_parent"
+									android:gravity="center">
+
+								<com.suke.widget.SwitchButton
+										android:id="@+id/v3"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										app:sb_checked_color="@color/gree"/>
+							</LinearLayout>
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							app:cardBackgroundColor="@color/white"
+							app:cardCornerRadius="10dp"
+							android:layout_margin="5dp"
+							app:cardElevation="0dp">
+
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:gravity="center_vertical"
+								android:padding="10dp">
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:orientation="vertical"
+									android:layout_weight="1">
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="播放自动静音"
+										android:textColor="@color/black"
+										android:textSize="16sp"
+										android:textStyle="bold"
+										android:layout_margin="2dp"/>
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="播放视频自动设置静音"
+										android:textColor="#95000000"
+										android:textSize="13sp"
+										android:layout_margin="2dp"/>
+							</LinearLayout>
+
+							<LinearLayout
+									android:layout_width="wrap_content"
+									android:layout_height="match_parent"
+									android:gravity="center">
+
+								<com.suke.widget.SwitchButton
+										android:id="@+id/v6"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										app:sb_checked_color="@color/gree"/>
+							</LinearLayout>
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							app:cardBackgroundColor="@color/white"
+							app:cardCornerRadius="10dp"
+							android:layout_margin="5dp"
+							app:cardElevation="0dp">
+
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:gravity="center_vertical"
+								android:padding="10dp">
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:orientation="vertical"
+									android:layout_weight="1">
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="跳转下一节"
+										android:textColor="@color/black"
+										android:textSize="16sp"
+										android:textStyle="bold"
+										android:layout_margin="2dp"/>
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="当一节课程播放结束自动播放下一节"
+										android:textColor="#95000000"
+										android:textSize="13sp"
+										android:layout_margin="2dp"/>
+							</LinearLayout>
+
+							<LinearLayout
+									android:layout_width="wrap_content"
+									android:layout_height="match_parent"
+									android:gravity="center">
+
+								<com.suke.widget.SwitchButton
+										android:id="@+id/v4"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										app:sb_checked_color="@color/gree"/>
+							</LinearLayout>
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							app:cardBackgroundColor="@color/white"
+							app:cardCornerRadius="10dp"
+							android:layout_margin="5dp"
+							app:cardElevation="0dp">
+
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:gravity="center_vertical"
+								android:padding="10dp">
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:orientation="vertical"
+									android:layout_weight="1">
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="强制2倍播放"
+										android:textColor="@color/black"
+										android:textSize="16sp"
+										android:textStyle="bold"
+										android:layout_margin="2dp"/>
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="强制所有视频2倍速度播放"
+										android:textColor="#95000000"
+										android:textSize="13sp"
+										android:layout_margin="2dp"/>
+							</LinearLayout>
+
+							<LinearLayout
+									android:layout_width="wrap_content"
+									android:layout_height="match_parent"
+									android:gravity="center">
+
+								<com.suke.widget.SwitchButton
+										android:id="@+id/v7"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										app:sb_checked_color="@color/gree"/>
+							</LinearLayout>
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							app:cardBackgroundColor="@color/white"
+							app:cardCornerRadius="10dp"
+							android:layout_margin="5dp"
+							app:cardElevation="0dp">
+
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:gravity="center_vertical"
+								android:padding="10dp">
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:orientation="vertical"
+									android:layout_weight="1">
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="任务视频播放完"
+										android:textColor="@color/black"
+										android:textSize="16sp"
+										android:textStyle="bold"
+										android:layout_margin="2dp"/>
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="任务点即使已完成，但是视频未播放完，继续播放"
+										android:textColor="#95000000"
+										android:textSize="13sp"
+										android:layout_margin="2dp"/>
+							</LinearLayout>
+
+							<LinearLayout
+									android:layout_width="wrap_content"
+									android:layout_height="match_parent"
+									android:gravity="center">
+
+								<com.suke.widget.SwitchButton
+										android:id="@+id/v8"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										app:sb_checked_color="@color/gree"/>
+							</LinearLayout>
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							app:cardBackgroundColor="@color/white"
+							app:cardCornerRadius="10dp"
+							android:layout_margin="5dp"
+							app:cardElevation="0dp">
+
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="vertical">
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="horizontal"
+									android:gravity="center_vertical"
+									android:padding="10dp">
+
+								<LinearLayout
+										android:layout_width="match_parent"
+										android:layout_height="match_parent"
+										android:orientation="vertical"
+										android:layout_weight="1">
+
+									<TextView
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:text="结束通知"
+											android:textColor="@color/black"
+											android:textSize="16sp"
+											android:textStyle="bold"
+											android:layout_margin="2dp"/>
+
+									<TextView
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:text="当课程结束后发送邮箱通知"
+											android:textColor="#95000000"
+											android:textSize="13sp"
+											android:layout_margin="2dp"/>
+								</LinearLayout>
+
+								<LinearLayout
+										android:layout_width="wrap_content"
+										android:layout_height="match_parent"
+										android:gravity="center">
+
+									<com.suke.widget.SwitchButton
+											android:id="@+id/v5"
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											app:sb_checked_color="@color/gree"/>
+								</LinearLayout>
+							</LinearLayout>
+
+							<LinearLayout
+									android:visibility="gone"
+									android:id="@+id/eim"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="10dp">
+
+								<EditText
+										android:id="@+id/qq"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:hint="请输入QQ账号"
+										android:textSize="14sp"
+										android:inputType="number"
+										android:maxLength="11"
+										android:singleLine="true"
+										android:textColor="#000000"/>
+							</LinearLayout>
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							app:cardBackgroundColor="@color/white"
+							app:cardCornerRadius="10dp"
+							android:layout_margin="5dp"
+							app:cardElevation="0dp">
+
+						<LinearLayout
+								android:id="@+id/videbj"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:gravity="center_vertical"
+								android:padding="10dp">
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:orientation="vertical"
+									android:layout_weight="1">
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="任务点检测速度"
+										android:textColor="@color/black"
+										android:textSize="16sp"
+										android:textStyle="bold"
+										android:layout_margin="2dp"/>
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="1s等于1000，默认2000"
+										android:textColor="#95000000"
+										android:textSize="13sp"
+										android:layout_margin="2dp"/>
+							</LinearLayout>
+
+							<LinearLayout
+									android:layout_width="wrap_content"
+									android:layout_height="match_parent"
+									android:gravity="center">
+
+								<TextView
+										android:id="@+id/videjc"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="2000"
+										android:textStyle="bold"
+										android:textColor="@color/black"
+										android:textSize="14sp"/>
+							</LinearLayout>
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+					<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="关于我们"
+							android:textSize="17sp"
+							android:textStyle="bold"
+							android:layout_marginLeft="5dp"
+							android:layout_marginRight="5dp"
+							android:layout_marginTop="10dp"
+							android:layout_marginBottom="5dp"
+							android:textColor="@color/black"/>
+
+					<androidx.cardview.widget.CardView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							app:cardBackgroundColor="@color/white"
+							app:cardCornerRadius="10dp"
+							android:layout_margin="5dp"
+							app:cardElevation="0dp">
+
+						<LinearLayout
+								android:id="@+id/bout"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:gravity="center_vertical"
+								android:padding="10dp">
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:orientation="vertical"
+									android:layout_weight="1">
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="意见反馈"
+										android:textColor="@color/black"
+										android:textSize="16sp"
+										android:textStyle="bold"
+										android:layout_margin="2dp"/>
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="538234048"
+										android:textColor="#95000000"
+										android:textSize="13sp"
+										android:layout_margin="2dp"/>
+							</LinearLayout>
+
+							<LinearLayout
+									android:layout_width="30dp"
+									android:layout_height="match_parent"
+									android:gravity="center">
+
+								<ImageView
+										android:layout_width="20dp"
+										android:layout_height="20dp"
+										android:src="@drawable/baseline_arrow_forward_ios_24"/>
+							</LinearLayout>
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							app:cardBackgroundColor="@color/white"
+							app:cardCornerRadius="10dp"
+							android:layout_margin="5dp"
+							app:cardElevation="0dp">
+
+						<LinearLayout
+								android:id="@+id/sm"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:gravity="center_vertical"
+								android:padding="10dp"
+								tools:ignore="DuplicateIds">
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:orientation="vertical"
+									android:layout_weight="1"
+									tools:ignore="InefficientWeight">
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="免责声明"
+										android:textColor="@color/black"
+										android:textSize="16sp"
+										android:textStyle="bold"
+										android:layout_margin="2dp"
+										tools:ignore="HardcodedText"/>
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="用户使用条约"
+										android:textColor="#95000000"
+										android:textSize="13sp"
+										android:layout_margin="2dp"
+										tools:ignore="HardcodedText"/>
+							</LinearLayout>
+
+							<LinearLayout
+									android:layout_width="30dp"
+									android:layout_height="match_parent"
+									android:gravity="center">
+
+								<ImageView
+										android:layout_width="20dp"
+										android:layout_height="20dp"
+										android:src="@drawable/baseline_arrow_forward_ios_24"
+										tools:ignore="ContentDescription"/>
+							</LinearLayout>
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							app:cardBackgroundColor="@color/white"
+							app:cardCornerRadius="10dp"
+							android:layout_margin="5dp"
+							app:cardElevation="0dp">
+
+						<LinearLayout
+								android:id="@+id/wz"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:gravity="center_vertical"
+								android:padding="10dp"
+								tools:ignore="DuplicateIds">
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:orientation="vertical"
+									android:layout_weight="1">
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="软件官网"
+										android:textColor="@color/black"
+										android:textSize="16sp"
+										android:textStyle="bold"
+										android:layout_margin="2dp"/>
+
+							</LinearLayout>
+
+							<LinearLayout
+									android:layout_width="30dp"
+									android:layout_height="match_parent"
+									android:gravity="center">
+
+								<ImageView
+										android:layout_width="20dp"
+										android:layout_height="20dp"
+										android:src="@drawable/baseline_arrow_forward_ios_24"/>
+							</LinearLayout>
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

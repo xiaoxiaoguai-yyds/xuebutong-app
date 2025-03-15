@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center"
+			tools:ignore="MissingConstraints"
+			android:padding="10dp">
+
+		<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/useriup"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp">
+
+			<EditText
+					android:id="@+id/user"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:drawableLeft="@drawable/baseline_phone_iphone_24"
+					tools:ignore="MissingConstraints"
+					android:hint="请输入手机号"
+					android:singleLine="true"
+					android:phoneNumber="true"
+					android:maxLength="11"/>
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/passiup"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp">
+
+			<EditText
+					android:id="@+id/pass"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:drawableLeft="@drawable/baseline_key_24"
+					tools:ignore="MissingConstraints"
+					android:hint="请输入密码"
+					android:inputType="textPassword"
+					android:singleLine="true"/>
+		</com.google.android.material.textfield.TextInputLayout>
+	</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

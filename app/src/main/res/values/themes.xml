@@ -1,0 +1,31 @@
+<resources>
+	<!-- Base application theme. -->
+	<style name="Base.Theme.学不通" parent="Theme.Material3.DayNight.NoActionBar">
+		<!-- Customize your light theme here. -->
+		<!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+	</style>
+
+	<style name="Theme.学不通" parent="Base.Theme.学不通"/>
+
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<!-- 定义其他属性 -->
+		<item name="popupMenuStyle">@style/PopupMenu</item>
+	</style>
+
+	<style name="PopupMenu" parent="Widget.AppCompat.PopupMenu">
+		<item name="android:popupBackground">@color/white</item>
+		<!-- 其他样式属性 -->
+	</style>
+
+
+	<style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+		<item name="android:textSize">20sp</item><!--toolbar标题字体大小-->
+		<item name="android:textColor">#ffffff</item><!--toolbar标题字体颜色-->
+	</style>
+
+	<!-- 设置Toolbar 子标题subtitle标题字体的大小 -->
+	<style name="Toolbar.SubTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+		<item name="android:textSize">12sp</item><!--子标题字体大小-->
+		<item name="android:textColor">#ffffff</item><!--子标题字体颜色-->
+	</style>
+</resources>

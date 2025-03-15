@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".MainActivity"
+		>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#f5f5f5"
+			android:orientation="vertical"
+			>
+
+		<androidx.appcompat.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:paddingLeft="20dp"
+				android:paddingRight="20dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/gree"
+				app:title="学不通"
+				app:subtitle="Stdio 工作室"
+				app:titleTextAppearance="@style/Toolbar.TitleText"
+				app:subtitleTextAppearance="@style/Toolbar.SubTitleText"
+				app:popupTheme="@style/AppTheme"
+				app:subtitleTextColor="@color/white"
+				app:titleTextColor="@color/white"
+				/>
+
+		<androidx.core.widget.NestedScrollView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				tools:context=".homeActivity"
+				>
+
+			<ScrollView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:background="#27F3DEDE"
+						tools:ignore="ScrollViewSize"
+						>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_margin="20dp"
+							android:background="@drawable/yuan"
+							android:orientation="vertical"
+							>
+
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:padding="10dp"
+								>
+
+							<androidx.cardview.widget.CardView
+									android:layout_width="120dp"
+									android:layout_height="120dp"
+									app:cardCornerRadius="10dp"
+									app:cardElevation="0dp"
+									>
+
+								<ImageView
+										android:id="@+id/image"
+										android:layout_width="match_parent"
+										android:layout_height="match_parent"
+										android:layout_gravity="center"
+										android:scaleType="fitXY"
+										android:background="@drawable/yuan"
+										android:baselineAligned="false"
+										android:src="@mipmap/img"
+										/>
+							</androidx.cardview.widget.CardView>
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:orientation="vertical"
+									>
+
+								<LinearLayout
+										android:layout_width="match_parent"
+										android:layout_height="match_parent"
+										android:layout_marginLeft="10dp"
+										android:layout_weight="1"
+										android:background="@drawable/xx"
+										android:gravity="center"
+										android:orientation="vertical"
+										android:padding="3dp"
+										>
+
+									<LinearLayout
+											android:layout_width="match_parent"
+											android:layout_height="wrap_content"
+											android:layout_margin="5dp"
+											android:layout_weight="1"
+											android:background="@drawable/rz"
+											android:gravity="center"
+											>
+
+										<TextView
+												android:id="@+id/name"
+												android:layout_width="wrap_content"
+												android:layout_height="wrap_content"
+												android:layout_gravity="center"
+												android:text="Not name/Not uname"
+												android:textColor="@color/black"
+												android:textSize="13sp"
+												android:textStyle="bold"
+												/>
+									</LinearLayout>
+
+									<LinearLayout
+											android:layout_width="match_parent"
+											android:layout_height="wrap_content"
+											android:layout_margin="5dp"
+											android:layout_weight="1"
+											android:background="@drawable/rz"
+											android:gravity="center"
+											>
+
+										<TextView
+												android:id="@+id/phone"
+												android:layout_width="wrap_content"
+												android:layout_height="wrap_content"
+												android:layout_gravity="center"
+												android:text="Not phone number"
+												android:textColor="@color/black"
+												android:textSize="13sp"
+												android:textStyle="bold"
+												/>
+									</LinearLayout>
+
+									<LinearLayout
+											android:layout_width="match_parent"
+											android:layout_height="wrap_content"
+											android:layout_margin="5dp"
+											android:layout_weight="1"
+											android:background="@drawable/rz"
+											android:gravity="center"
+											>
+
+										<TextView
+												android:id="@+id/school"
+												android:layout_width="wrap_content"
+												android:layout_height="wrap_content"
+												android:layout_gravity="center"
+												android:text="Not schoolname"
+												android:textColor="@color/black"
+												android:textSize="13sp"
+												android:textStyle="bold"
+												tools:ignore="HardcodedText"
+												/>
+									</LinearLayout>
+								</LinearLayout>
+							</LinearLayout>
+						</LinearLayout>
+
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								>
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="horizontal"
+									android:padding="5dp"
+									>
+
+								<LinearLayout
+										android:id="@+id/sx"
+										android:layout_width="match_parent"
+										android:layout_height="40dp"
+										android:layout_margin="5dp"
+										android:layout_weight="1"
+										android:background="@drawable/gree"
+										android:gravity="center"
+										>
+
+									<TextView
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:text="扫码登录"
+											android:textColor="@color/white"
+											/>
+								</LinearLayout>
+
+								<LinearLayout
+										android:id="@+id/login"
+										android:layout_width="match_parent"
+										android:layout_height="40dp"
+										android:layout_margin="5dp"
+										android:layout_weight="1"
+										android:background="@drawable/gree"
+										android:gravity="center"
+										>
+
+									<TextView
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:text="账号登录"
+											android:textColor="@color/white"
+											/>
+								</LinearLayout>
+
+							</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginLeft="20dp"
+							android:layout_marginRight="20dp"
+							android:layout_marginBottom="30dp"
+							android:background="@drawable/yuan"
+							android:orientation="vertical"
+							android:padding="10dp"
+							>
+
+						<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="我的课程"
+								android:singleLine="true"
+								android:textColor="@color/black"
+								android:textSize="14sp"
+								android:textStyle="bold"
+								android:layout_margin="5dp"
+								tools:ignore="HardcodedText"
+								/>
+
+						<RelativeLayout
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								>
+
+							<me.jingbin.library.ByRecyclerView
+									android:id="@+id/lb"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									tools:listitem="@layout/list"
+									/>
+
+							<LinearLayout
+									android:id="@+id/load"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:background="@color/white"
+									android:gravity="center"
+									android:padding="10dp"
+									android:orientation="vertical"
+									>
+
+								<ImageView
+										android:layout_width="150dp"
+										android:layout_height="150dp"
+										android:src="@mipmap/logo"
+										android:scaleType="centerCrop"
+										/>
+
+								<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="Not Login"
+										android:textColor="#DADDE2"
+										android:textSize="14sp"
+										android:layout_margin="10dp"
+										/>
+							</LinearLayout>
+						</RelativeLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>
+		</androidx.core.widget.NestedScrollView>
+	</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
