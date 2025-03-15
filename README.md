@@ -36,13 +36,13 @@
 
 ### 方式一：下载APK
 
-从[Releases](https://github.com/your-username/xuebutong/releases)页面下载最新版本的APK文件，并安装到您的Android设备上。
+从[Releases](https:///github.com/xiaoxiaoguai-yyds/xuebutong-app/releases)页面下载最新版本的APK文件，并安装到您的Android设备上。
 
 ### 方式二：自行编译
 
 1. 克隆本仓库
    ```bash
-   git clone https://github.com/your-username/xuebutong.git
+   git clone https://github.com/xiaoxiaoguai-yyds/xuebutong-app.git
    ```
 
 2. 使用Android Studio打开项目
@@ -50,10 +50,6 @@
 3. 配置QQ登录（如需使用）
    - 在[QQ互联开放平台](https://connect.qq.com/)申请开发者资质
    - 获取APP ID和APP KEY
-   - 在`app/src/main/res/values/strings.xml`中添加相关配置：
-     ```xml
-     <string name="qq_app_id">YOUR_QQ_APP_ID</string>
-     ```
 
 4. 构建APK
    ```bash
@@ -76,11 +72,7 @@
 
 1. 前往[QQ互联开放平台](https://connect.qq.com/)注册并申请开发者资质
 2. 创建应用，获取APP ID和APP KEY
-3. 在`app/src/main/res/values/strings.xml`文件中添加：
-   ```xml
-   <string name="qq_app_id">YOUR_QQ_APP_ID</string>
-   ```
-4. 在AndroidManifest.xml中添加相关权限和配置（具体配置请参考QQ互联开发文档）
+3. 在AndroidManifest.xml中添加相关权限和配置（具体配置请参考QQ互联开发文档）
 
 ## 🛠️ 技术架构
 
@@ -142,13 +134,7 @@ A: 请在GitHub仓库的Issues页面提交问题或建议，我们会尽快回�
 
 ## 🔮 未来计划
 
-- [ ] 支持更多学习平台
-- [ ] 添加自动答题功能
-- [ ] 优化视频播放体验
-- [ ] 实现群组学习功能
-- [ ] 开发iOS版本
-- [ ] 添加数据同步功能
-- [ ] 支持更多登录方式
+- [ ] 本项目永久停更
 
 ## ⚠️ 注意事项
 
@@ -194,13 +180,6 @@ A: 请在GitHub仓库的Issues页面提交问题或建议，我们会尽快回�
 - 特别感谢Android开源社区提供的各种优秀库和工具
 - 感谢所有提供反馈和建议的用户
 
-## 📞 联系方式
-
-- **GitHub Issues**: 提交问题和建议
-- **Email**: your-email@example.com
-- **QQ群**: 123456789 (学不通交流群)
-
----
 
 ## 免责声明
 
